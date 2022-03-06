@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+<title> One Piece <title/>
+<h1>HTML Links</h1>
+
+<a href="https://onepiece.fandom.com/wiki/Monkey_D._Luffy"> One Piece </a>
+
+<h1><a href="https://onepiece.fandom.com/wiki/Monkey_D._Luffy"</a> One Piece Main Characters </h1>
+
+<p><a href="https://onepiece.fandom.com/wiki/Monkey_D._Luffy">One Piece Main Characters</a></p>
+
+
+
+<h2>An ordered HTML list</h2>
+
+<ol>
+  <li>Monkey D. Luffy</li>
+  <li>Roronoa Zoro </li>
+  <li> Nami </li>
+</ol>
+
+</body>
+</html>
