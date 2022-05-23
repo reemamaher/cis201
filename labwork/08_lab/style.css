@@ -1,0 +1,38 @@
+*{
+    color: #0d3141;
+}
+.index-left img{
+    width: 70%;
+    margin:  15% 15%;
+    border-radius: 50%;
+}
+.index-right{
+    color:#0d3141 ;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10%;
+}
+.index-right a{
+    color: #017f8d;
+    background-color: #f2c230;
+}
+.about-me-title{
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #0d3141;
+}
+.about-me *{
+    font-size: 1.5rem;
+    line-height: 60px;
+    font-weight: bold;
+    padding-left: 5%;
+    color: #0d3141;
+}
+.about-me div,.about-me p{
+    text-align: center;
+}
+.about-me div span,.about-me p span{
+    color: #017f8d;
+}
