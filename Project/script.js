@@ -26,15 +26,15 @@ var products=[
     },
     {
         id:2,
-        prod:"Bac Kwa",
+        prod:"Baklava",
         serving:"1 pieces",
         calories:370,
         cat_id:1
     },
     {
         id:3,
-        prod:"Love Letters",
-        serving:"4 pieces",
+        prod:"Chocolate Brownies",
+        serving:"1 piece",
         calories:210,
         cat_id:1
     },
@@ -54,7 +54,7 @@ var products=[
     },
     {
         id:6,
-        prod:"Checken",
+        prod:"Chicken",
         serving:"100gm",
         calories:110,
         cat_id:2
@@ -82,7 +82,7 @@ var products=[
     },
     {
         id:10,
-        prod:"Chease Cake",
+        prod:"Cheesecake",
         serving:"100gm",
         calories:185,
         cat_id:3
@@ -202,7 +202,7 @@ for (i = 0; i < localStorage.length; i++)   {
     cartprds=(JSON.parse(localStorage.getItem(localStorage.key(i))));
     cartprds.forEach(element => {
         var tr=document.createElement("tr");
-    
+
         var id=document.createElement("td");
         id.innerText=element.id;
         tr.appendChild(id);
@@ -210,15 +210,15 @@ for (i = 0; i < localStorage.length; i++)   {
         var p=document.createElement("td");
         p.innerText=element.prod;
         tr.appendChild(p);
-    
+
         var serv=document.createElement("td");
         serv.innerText=element.serving;
         tr.appendChild(serv);
-    
+
         var cal=document.createElement("td");
         cal.innerText=element.calories;
         tr.appendChild(cal);
-    
+
         cartTemp.appendChild(tr);
 
         totalCal+=element.calories;
