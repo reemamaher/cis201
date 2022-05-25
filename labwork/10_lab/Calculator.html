@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Example 01</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="Main.css" />
+  </head>
+  <body>
+    <!-- div is added to style whole body of calculator. -->
+    <div class="calculator">
+      <!-- div is added to style input box. -->
+      <div class="result"><input type="text" readonly size="18" id="d" /></div>
+      <!-- div is added to style keys -->
+      <div class="key">
+        <!-- paragraph tag is added to align 3 key in a row. -->
+        <p>
+          <button class="gray" onclick="displayNum(1)">1</button>
+          <button class="gray" onclick="displayNum(2)">2</button>
+          <button class="red" onClick='displayNum("+")'>+</button>
+        </p>
+        <p>
+          <button class="gray" onclick="displayNum(3)">3</button>
+          <button class="gray" onClick="displayNum(4)">4</button>
+          <button class="red" onclick='displayNum("-")'>-</button>
+        </p>
+        <button class="red" id="submit" onClick="displayResult()">=</button>
+      </div>
+    </div>
+  </body>
+  <script>
+    function displayNum(x) {
+      console.log(x);
+      //innerHTML is chaged to value to write in the input box.
+      document.getElementById("d").value += x;
+    }
+    function displayResult() {
+      // get text
+      var text_to_eva = document.getElementById("d").value;
+      // evalute text
+      document.getElementById("d").value = eval(text_to_eva);
+    }
+  </script>
+</html>
